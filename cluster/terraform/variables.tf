@@ -1,3 +1,9 @@
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "af-south-1"
+}
+
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string
@@ -7,13 +13,13 @@ variable "cluster_name" {
 variable "cluster_version" {
   description = "EKS cluster version."
   type        = string
-  default     = "1.33"
+  default     = "1.34"
 }
 
 variable "ami_release_version" {
   description = "Default EKS AMI release version for node groups"
   type        = string
-  default     = "1.33.0-20250704"
+  default     = "1.34.2-20251209"
 }
 
 variable "vpc_cidr" {
